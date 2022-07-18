@@ -16,6 +16,7 @@
 		762327CD2884F12300C3978B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762327CC2884F12300C3978B /* Home.storyboard */; };
 		76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A203712884FE3900320B9A /* SettingTableViewController.swift */; };
 		76A203762885289100320B9A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A203752885289100320B9A /* Setting.storyboard */; };
+		76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A20377288532A600320B9A /* case2SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		762327CC2884F12300C3978B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		76A203712884FE3900320B9A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		76A203752885289100320B9A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		76A20377288532A600320B9A /* case2SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = case2SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +64,17 @@
 		762327B72884DDC100C3978B /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
-				762327B82884DDC100C3978B /* AppDelegate.swift */,
-				762327BA2884DDC100C3978B /* SceneDelegate.swift */,
-				762327BC2884DDC100C3978B /* ViewController.swift */,
+				762327C62884DDC400C3978B /* Info.plist */,
 				762327CC2884F12300C3978B /* Home.storyboard */,
+				76A203752885289100320B9A /* Setting.storyboard */,
+				762327B82884DDC100C3978B /* AppDelegate.swift */,
+				76A20377288532A600320B9A /* case2SettingTableViewController.swift */,
+				762327BA2884DDC100C3978B /* SceneDelegate.swift */,
 				76A203712884FE3900320B9A /* SettingTableViewController.swift */,
-				762327BE2884DDC100C3978B /* Main.storyboard */,
+				762327BC2884DDC100C3978B /* ViewController.swift */,
 				762327C12884DDC400C3978B /* Assets.xcassets */,
 				762327C32884DDC400C3978B /* LaunchScreen.storyboard */,
-				762327C62884DDC400C3978B /* Info.plist */,
-				76A203752885289100320B9A /* Setting.storyboard */,
+				762327BE2884DDC100C3978B /* Main.storyboard */,
 			);
 			path = TrendMedia;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */,
 				76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */,
 				762327BD2884DDC100C3978B /* ViewController.swift in Sources */,
 				762327B92884DDC100C3978B /* AppDelegate.swift in Sources */,
