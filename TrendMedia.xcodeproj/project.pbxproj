@@ -15,6 +15,7 @@
 		762327C52884DDC400C3978B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762327C32884DDC400C3978B /* LaunchScreen.storyboard */; };
 		762327CD2884F12300C3978B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762327CC2884F12300C3978B /* Home.storyboard */; };
 		76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A203712884FE3900320B9A /* SettingTableViewController.swift */; };
+		76A203762885289100320B9A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A203752885289100320B9A /* Setting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		762327C62884DDC400C3978B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		762327CC2884F12300C3978B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		76A203712884FE3900320B9A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		76A203752885289100320B9A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				762327C12884DDC400C3978B /* Assets.xcassets */,
 				762327C32884DDC400C3978B /* LaunchScreen.storyboard */,
 				762327C62884DDC400C3978B /* Info.plist */,
+				76A203752885289100320B9A /* Setting.storyboard */,
 			);
 			path = TrendMedia;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			files = (
 				762327C52884DDC400C3978B /* LaunchScreen.storyboard in Resources */,
 				762327C22884DDC400C3978B /* Assets.xcassets in Resources */,
+				76A203762885289100320B9A /* Setting.storyboard in Resources */,
 				762327C02884DDC100C3978B /* Main.storyboard in Resources */,
 				762327CD2884F12300C3978B /* Home.storyboard in Resources */,
 			);
@@ -300,7 +304,7 @@
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UIMainStoryboardFile = Setting;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -329,7 +333,7 @@
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UIMainStoryboardFile = Setting;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
