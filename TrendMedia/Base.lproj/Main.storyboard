@@ -44,16 +44,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHV-Qo-9PQ">
+                                <rect key="frame" x="20" y="583" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0aP-a8-o6b"/>
+                                    <constraint firstAttribute="width" constant="100" id="Sk5-tH-Cf7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-Ks-foD">
+                                <rect key="frame" x="40" y="603" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yxl-rh-MgH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4vC-zu-4Ku"/>
+                            <constraint firstItem="lNk-Ks-foD" firstAttribute="width" secondItem="QHV-Qo-9PQ" secondAttribute="width" id="54v-ym-F8R"/>
                             <constraint firstItem="yxl-rh-MgH" firstAttribute="top" secondItem="gxB-dT-NQF" secondAttribute="bottom" constant="10" id="8Ia-MD-eMb"/>
+                            <constraint firstItem="lNk-Ks-foD" firstAttribute="top" secondItem="QHV-Qo-9PQ" secondAttribute="top" constant="20" id="Dmt-qD-7K2"/>
                             <constraint firstItem="7Zx-K1-lKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="EbO-DI-JWN"/>
                             <constraint firstItem="gxB-dT-NQF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="L1u-zc-Pcp"/>
+                            <constraint firstItem="QHV-Qo-9PQ" firstAttribute="top" secondItem="7Zx-K1-lKr" secondAttribute="bottom" constant="45" id="ObR-Tz-JCB"/>
                             <constraint firstItem="gxB-dT-NQF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XSM-uB-aA1"/>
+                            <constraint firstItem="QHV-Qo-9PQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZgW-7o-Oi1"/>
+                            <constraint firstItem="lNk-Ks-foD" firstAttribute="leading" secondItem="QHV-Qo-9PQ" secondAttribute="leading" constant="20" id="aaU-zb-0Ju"/>
                             <constraint firstItem="7Zx-K1-lKr" firstAttribute="top" secondItem="yxl-rh-MgH" secondAttribute="bottom" constant="10" id="d0k-ut-PsD"/>
+                            <constraint firstItem="lNk-Ks-foD" firstAttribute="height" secondItem="QHV-Qo-9PQ" secondAttribute="height" id="fRr-06-Qjo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Zx-K1-lKr" secondAttribute="trailing" constant="10" id="qwA-HY-IEt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gxB-dT-NQF" secondAttribute="trailing" id="uS9-dT-41N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yxl-rh-MgH" secondAttribute="trailing" constant="10" id="zfR-G5-OFt"/>
@@ -63,18 +81,25 @@
                         <outlet property="date2Label" destination="7Zx-K1-lKr" id="iGi-w1-x4r"/>
                         <outlet property="dateLabel" destination="yxl-rh-MgH" id="1Ar-PM-E2x"/>
                         <outlet property="datePicker" destination="gxB-dT-NQF" id="TEt-Ye-6Hy"/>
+                        <outlet property="yelloViewLeadingConstaint" destination="aaU-zb-0Ju" id="MM3-CI-Sqm"/>
                         <outletCollection property="dateLabelCollection" destination="7Zx-K1-lKr" collectionClass="NSMutableArray" id="zuu-hi-OkX"/>
                         <outletCollection property="dateLabelCollection" destination="yxl-rh-MgH" collectionClass="NSMutableArray" id="mNp-mI-sM6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

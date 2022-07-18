@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var dateLabelCollection: [UILabel]!
 
+    @IBOutlet weak var yelloViewLeadingConstaint: NSLayoutConstraint!
     // 변수의 스코프
     let format = DateFormatter()
     
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
         
         // 다음 코드가 함수 밖에서 안되는 이유: 클래스의 멤버는 프로퍼티와 메서드 뿐이라서.
         format.dateFormat = "yyyy/MM/dd"
+        
+        yelloViewLeadingConstaint.constant = 120
     }
     
     func configureLabelDesign() {
