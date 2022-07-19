@@ -62,6 +62,9 @@ class SettingTableViewController: UITableViewController {
     // keyword: cellfor
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // [재사용 메커니즘] - 시뮬레이터에서 스크롤을 진행하면 셀이 보일때 출력이 진행됨.
+        print("cellformat", indexPath)
+        
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "rightDetailCell")!
             
