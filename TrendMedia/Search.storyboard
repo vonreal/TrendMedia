@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L1H-l2-0pR">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vsV-uK-9Dq">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -28,6 +28,85 @@
             </objects>
             <point key="canvasLocation" x="678" y="138"/>
         </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="3Wp-jF-ybm">
+            <objects>
+                <tableViewController id="vsV-uK-9Dq" customClass="SearchTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ZTf-T8-yfR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="100" id="xQ2-c4-gu3" customClass="SearchTableViewCell" customModule="TrendMedia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xQ2-c4-gu3" id="blT-H2-y90">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="아바타" translatesAutoresizingMaskIntoConstraints="NO" id="KUB-DC-0S6">
+                                            <rect key="frame" x="5" y="0.5" width="60" height="99"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="99" id="IbD-vR-jd0"/>
+                                                <constraint firstAttribute="width" constant="60" id="aka-uf-Wgi"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="j6T-kW-jL7">
+                                            <rect key="frame" x="70" y="10" width="344" height="80"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영화 제목 레이블" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDD-ba-iPK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="344" height="15.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.07.19 | EN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-Rn-NAc">
+                                                    <rect key="frame" x="0.0" y="20.5" width="344" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pma-FR-XzA">
+                                                    <rect key="frame" x="0.0" y="39.5" width="344" height="40.5"/>
+                                                    <string key="text">영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개영화 소개</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Pma-FR-XzA" firstAttribute="height" secondItem="JVR-Rn-NAc" secondAttribute="height" multiplier="2.97059" id="Pcn-Wp-JRt"/>
+                                                <constraint firstItem="JVR-Rn-NAc" firstAttribute="height" secondItem="jDD-ba-iPK" secondAttribute="height" multiplier="0.871795" id="bDS-bQ-Rnl"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KUB-DC-0S6" firstAttribute="centerY" secondItem="blT-H2-y90" secondAttribute="centerY" id="6lX-xU-npn"/>
+                                        <constraint firstItem="j6T-kW-jL7" firstAttribute="top" secondItem="blT-H2-y90" secondAttribute="top" constant="10" id="9ze-H2-2cI"/>
+                                        <constraint firstAttribute="bottom" secondItem="j6T-kW-jL7" secondAttribute="bottom" constant="10" id="Gpa-5R-fFK"/>
+                                        <constraint firstAttribute="trailing" secondItem="j6T-kW-jL7" secondAttribute="trailing" id="Lbh-pg-ia2"/>
+                                        <constraint firstItem="j6T-kW-jL7" firstAttribute="leading" secondItem="KUB-DC-0S6" secondAttribute="trailing" constant="5" id="f6K-Sv-kOr"/>
+                                        <constraint firstItem="KUB-DC-0S6" firstAttribute="leading" secondItem="blT-H2-y90" secondAttribute="leading" constant="5" id="z9i-Z5-gEZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieOpeningDateLabel" destination="JVR-Rn-NAc" id="qXu-8w-Tko"/>
+                                    <outlet property="movieStalkLabel" destination="Pma-FR-XzA" id="yGj-Rv-2kS"/>
+                                    <outlet property="movieTitleLabel" destination="jDD-ba-iPK" id="y5u-s2-dQX"/>
+                                    <outlet property="posterImageView" destination="KUB-DC-0S6" id="hhJ-82-iTM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vsV-uK-9Dq" id="0kV-5p-0as"/>
+                            <outlet property="delegate" destination="vsV-uK-9Dq" id="0Wu-zK-5vs"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4Z-MH-Cx6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688.40579710144937" y="813.61607142857144"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5j2-oi-C3L">
             <objects>
@@ -48,6 +127,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="아바타" width="240" height="361"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -43,10 +43,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pz2-LI-k1L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aoc-I1-Lst">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="aoU-xQ-Mjz" kind="relationship" relationship="viewControllers" id="s4v-rh-d1d"/>
                         <segue destination="e4Z-cW-MAQ" kind="relationship" relationship="viewControllers" id="ryz-qo-a8T"/>
                         <segue destination="IvD-e9-dk6" kind="relationship" relationship="viewControllers" id="GeE-CS-pyE"/>
                         <segue destination="fe5-7d-0Dw" kind="relationship" relationship="viewControllers" id="btv-nc-N6t"/>
@@ -74,6 +76,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgC-YF-zyl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155" y="700"/>
+        </scene>
+        <!--Shopping-->
+        <scene sceneID="Z4n-sl-anD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shopping" id="aoU-xQ-Mjz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ScW-Xq-Vo1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rW-UP-CFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="1170"/>
         </scene>
     </scenes>
 </document>
