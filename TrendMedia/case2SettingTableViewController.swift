@@ -45,5 +45,4 @@ class case2SettingTableViewController: UITableViewController {
         
         return cell
     }
-    
 }
