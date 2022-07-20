@@ -1,0 +1,59 @@
+//
+//  RecommandCollectionViewController.swift
+//  TrendMedia
+//
+//  Created by 나지운 on 2022/07/20.
+//
+
+import UIKit
+import Toast
+import Kingfisher
+
+/*
+ TableView      -> CollectionView
+ Row            -> Item
+ heightForRowAt -> (테이블 뷰와 달리 너비와 높이가 필요함) FlowLayout (heightForItemAt이 없는 이유)
+ */
+
+class RecommandCollectionViewController: UICollectionViewController {
+
+    let imageURL = "http://img.movist.com/?img=/x00/05/02/26_p1.jpg"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 컬렉션뷰의 셀 크기, 셀 사이 간격 등 설정
+        let layout = UICollectionViewFlowLayout()
+        let spacing: CGFloat = 8
+        let width = UIScreen.main.bounds.width - (spacing * 4)
+        
+        layout.itemSize = CGSize(width: width / 3, height: (width / 3) * 1.3)
+        layout.scrollDirection = .vertical
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        layout.minimumLineSpacing = 8
+        layout.minimumInteritemSpacing = 8
+        
+        collectionView.collectionViewLayout = layout
+    }
+    
+    // 0. 셀 갯수
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    // 1. 셀 데이터 및 디자인 변경
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommandCollectionViewCell", for: indexPath) as! RecommandCollectionViewCell
+        
+        cell.posterImageView.backgroundColor = .orange
+        
+        let url = URL(string: imageURL)
+        cell.posterImageView.kf.setImage(with: url)
+        
+        return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        view.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 3, position: .center)
+    }
+}
