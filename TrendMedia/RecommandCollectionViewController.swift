@@ -17,7 +17,7 @@ import Kingfisher
 
 class RecommandCollectionViewController: UICollectionViewController {
 
-    let imageURL = "http://img.movist.com/?img=/x00/05/02/26_p1.jpg"
+    let imageURL = "https://movie-phinf.pstatic.net/20220704_246/16569027452369rlGb_JPEG/movie_image.jpg"
     
     override func viewDidLoad() {
         super.viewDidLoad()
