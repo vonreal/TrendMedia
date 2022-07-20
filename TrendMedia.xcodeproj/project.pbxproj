@@ -16,6 +16,8 @@
 		762327CD2884F12300C3978B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762327CC2884F12300C3978B /* Home.storyboard */; };
 		763774F12887872800872A33 /* SearchMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763774F02887872800872A33 /* SearchMovieTableViewController.swift */; };
 		763774F32887876900872A33 /* SearchMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763774F22887876900872A33 /* SearchMovieTableViewCell.swift */; };
+		763774F528878CAA00872A33 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763774F428878CAA00872A33 /* Movie.swift */; };
+		763774F72887930C00872A33 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763774F62887930C00872A33 /* MovieInfo.swift */; };
 		76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A203712884FE3900320B9A /* SettingTableViewController.swift */; };
 		76A203762885289100320B9A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A203752885289100320B9A /* Setting.storyboard */; };
 		76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A20377288532A600320B9A /* case2SettingTableViewController.swift */; };
@@ -48,6 +50,8 @@
 		762327CC2884F12300C3978B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		763774F02887872800872A33 /* SearchMovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieTableViewController.swift; sourceTree = "<group>"; };
 		763774F22887876900872A33 /* SearchMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieTableViewCell.swift; sourceTree = "<group>"; };
+		763774F428878CAA00872A33 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		763774F62887930C00872A33 /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		76A203712884FE3900320B9A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		76A203752885289100320B9A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		76A20377288532A600320B9A /* case2SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = case2SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				76CEA52D28864DA30031F284 /* BucketListTableViewCell.swift */,
 				76CEA52B28864B910031F284 /* BucketlistTableViewController.swift */,
 				76A20377288532A600320B9A /* case2SettingTableViewController.swift */,
+				763774F428878CAA00872A33 /* Movie.swift */,
+				763774F62887930C00872A33 /* MovieInfo.swift */,
 				76CEA51B288636A60031F284 /* MySettingTableViewController.swift */,
 				762327BA2884DDC100C3978B /* SceneDelegate.swift */,
 				763774F22887876900872A33 /* SearchMovieTableViewCell.swift */,
@@ -207,11 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763774F528878CAA00872A33 /* Movie.swift in Sources */,
 				763774F32887876900872A33 /* SearchMovieTableViewCell.swift in Sources */,
 				76CEA5282886453B0031F284 /* UIViewController+Extension.swift in Sources */,
 				76CEA51C288636A60031F284 /* MySettingTableViewController.swift in Sources */,
 				76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */,
 				76CEA5262886440E0031F284 /* SearchViewController.swift in Sources */,
+				763774F72887930C00872A33 /* MovieInfo.swift in Sources */,
 				76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */,
 				76D7905328868EC800E4D641 /* ShoppingTableViewCell.swift in Sources */,
 				76CEA52A2886478C0031F284 /* UITextField+Extension.swift in Sources */,
