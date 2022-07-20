@@ -9,7 +9,7 @@ import UIKit
 
 class SearchMovieTableViewController: UITableViewController {
 
-    var movieList = ["셰이프 오브 워터", "판의 미로", "헬보이"]
+    var movieList = ["셰이프 오브 워터", "판의 미로", "헬보이", "r", "q", "e", "e", "f", "d"]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +21,7 @@ class SearchMovieTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchMovieTableViewCell", for: indexPath) as! SearchMovieTableViewCell
         
-        cell.titleLabel.text = movieList[indexPath.row]
+        cell.configureCell(data: movieList[indexPath.row])
         
         return cell
     }
