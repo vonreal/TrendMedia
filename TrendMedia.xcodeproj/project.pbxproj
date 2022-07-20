@@ -14,6 +14,8 @@
 		762327C22884DDC400C3978B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762327C12884DDC400C3978B /* Assets.xcassets */; };
 		762327C52884DDC400C3978B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762327C32884DDC400C3978B /* LaunchScreen.storyboard */; };
 		762327CD2884F12300C3978B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762327CC2884F12300C3978B /* Home.storyboard */; };
+		763774F12887872800872A33 /* SearchMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763774F02887872800872A33 /* SearchMovieTableViewController.swift */; };
+		763774F32887876900872A33 /* SearchMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763774F22887876900872A33 /* SearchMovieTableViewCell.swift */; };
 		76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A203712884FE3900320B9A /* SettingTableViewController.swift */; };
 		76A203762885289100320B9A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A203752885289100320B9A /* Setting.storyboard */; };
 		76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A20377288532A600320B9A /* case2SettingTableViewController.swift */; };
@@ -44,6 +46,8 @@
 		762327C42884DDC400C3978B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762327C62884DDC400C3978B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		762327CC2884F12300C3978B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		763774F02887872800872A33 /* SearchMovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieTableViewController.swift; sourceTree = "<group>"; };
+		763774F22887876900872A33 /* SearchMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieTableViewCell.swift; sourceTree = "<group>"; };
 		76A203712884FE3900320B9A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		76A203752885289100320B9A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		76A20377288532A600320B9A /* case2SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = case2SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -98,21 +102,23 @@
 				762327CC2884F12300C3978B /* Home.storyboard */,
 				76CEA521288640760031F284 /* Intro.storyboard */,
 				76CEA51D288640410031F284 /* Search.storyboard */,
-				76D79056288699E000E4D641 /* SearchTableViewController.swift */,
-				76D79054288699C900E4D641 /* SearchTableViewCell.swift */,
 				76A203752885289100320B9A /* Setting.storyboard */,
-				76CEA51F2886404B0031F284 /* Trend.storyboard */,
 				76D7904E28868D4C00E4D641 /* Shopping.storyboard */,
-				76D7905228868EC800E4D641 /* ShoppingTableViewCell.swift */,
-				76D7905028868E2600E4D641 /* ShoppingTableViewController.swift */,
+				76CEA51F2886404B0031F284 /* Trend.storyboard */,
 				762327B82884DDC100C3978B /* AppDelegate.swift */,
 				76CEA52D28864DA30031F284 /* BucketListTableViewCell.swift */,
 				76CEA52B28864B910031F284 /* BucketlistTableViewController.swift */,
 				76A20377288532A600320B9A /* case2SettingTableViewController.swift */,
 				76CEA51B288636A60031F284 /* MySettingTableViewController.swift */,
 				762327BA2884DDC100C3978B /* SceneDelegate.swift */,
+				763774F22887876900872A33 /* SearchMovieTableViewCell.swift */,
+				763774F02887872800872A33 /* SearchMovieTableViewController.swift */,
+				76D79054288699C900E4D641 /* SearchTableViewCell.swift */,
+				76D79056288699E000E4D641 /* SearchTableViewController.swift */,
 				76CEA5252886440E0031F284 /* SearchViewController.swift */,
 				76A203712884FE3900320B9A /* SettingTableViewController.swift */,
+				76D7905228868EC800E4D641 /* ShoppingTableViewCell.swift */,
+				76D7905028868E2600E4D641 /* ShoppingTableViewController.swift */,
 				76CEA523288643F60031F284 /* TrendViewController.swift */,
 				76CEA5292886478C0031F284 /* UITextField+Extension.swift */,
 				76CEA5272886453B0031F284 /* UIViewController+Extension.swift */,
@@ -201,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763774F32887876900872A33 /* SearchMovieTableViewCell.swift in Sources */,
 				76CEA5282886453B0031F284 /* UIViewController+Extension.swift in Sources */,
 				76CEA51C288636A60031F284 /* MySettingTableViewController.swift in Sources */,
 				76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */,
@@ -212,6 +219,7 @@
 				76D7905128868E2600E4D641 /* ShoppingTableViewController.swift in Sources */,
 				762327BD2884DDC100C3978B /* ViewController.swift in Sources */,
 				76D79055288699C900E4D641 /* SearchTableViewCell.swift in Sources */,
+				763774F12887872800872A33 /* SearchMovieTableViewController.swift in Sources */,
 				76CEA524288643F60031F284 /* TrendViewController.swift in Sources */,
 				762327B92884DDC100C3978B /* AppDelegate.swift in Sources */,
 				76CEA52E28864DA30031F284 /* BucketListTableViewCell.swift in Sources */,
