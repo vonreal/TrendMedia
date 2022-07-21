@@ -43,7 +43,11 @@ class RecommandCollectionViewController: UICollectionViewController {
     
     // 1. 셀 데이터 및 디자인 변경
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommandCollectionViewCell", for: indexPath) as! RecommandCollectionViewCell
+        
+        // guard let 옵셔널 바인딩으로 타입캐스팅 에러 처리 구문
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommandCollectionViewCell", for: indexPath) as? RecommandCollectionViewCell else {
+            return UICollectionViewCell()
+        }
         
         cell.posterImageView.backgroundColor = .orange
         

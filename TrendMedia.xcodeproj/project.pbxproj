@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7616E9012888E7BD00375DA7 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616E9002888E7BD00375DA7 /* TrendTableViewController.swift */; };
 		761CE35B2887B604008C2228 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 761CE35A2887B604008C2228 /* Kingfisher */; };
 		762327B92884DDC100C3978B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762327B82884DDC100C3978B /* AppDelegate.swift */; };
 		762327BB2884DDC100C3978B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762327BA2884DDC100C3978B /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7616E9002888E7BD00375DA7 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		762327B52884DDC100C3978B /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762327B82884DDC100C3978B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		762327BA2884DDC100C3978B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				76A203752885289100320B9A /* Setting.storyboard */,
 				76D7904E28868D4C00E4D641 /* Shopping.storyboard */,
 				76CEA51F2886404B0031F284 /* Trend.storyboard */,
+				7616E9002888E7BD00375DA7 /* TrendTableViewController.swift */,
 				762327B82884DDC100C3978B /* AppDelegate.swift */,
 				76CEA52D28864DA30031F284 /* BucketListTableViewCell.swift */,
 				76CEA52B28864B910031F284 /* BucketlistTableViewController.swift */,
@@ -245,6 +248,7 @@
 				76D79057288699E000E4D641 /* SearchTableViewController.swift in Sources */,
 				763774F928879A9D00872A33 /* RecommandCollectionViewController.swift in Sources */,
 				76D7905128868E2600E4D641 /* ShoppingTableViewController.swift in Sources */,
+				7616E9012888E7BD00375DA7 /* TrendTableViewController.swift in Sources */,
 				762327BD2884DDC100C3978B /* ViewController.swift in Sources */,
 				76D79055288699C900E4D641 /* SearchTableViewCell.swift in Sources */,
 				763774F12887872800872A33 /* SearchMovieTableViewController.swift in Sources */,

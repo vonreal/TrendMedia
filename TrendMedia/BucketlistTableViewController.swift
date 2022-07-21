@@ -28,7 +28,7 @@ class BucketlistTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 타입 캐스팅
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BucketListTableViewCell", for: indexPath) as! BucketListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: BucketListTableViewCell.identifier, for: indexPath) as! BucketListTableViewCell
         
         cell.bucketlistLabel.text = list[indexPath.row]
         cell.bucketlistLabel.font = .boldSystemFont(ofSize: 18)
@@ -37,11 +37,13 @@ class BucketlistTableViewController: UITableViewController {
     }
     
     @IBAction func userTextFieldReturn(_ sender: UITextField) {
-        list.append(sender.text!)
-        print(list)
+   
+        guard let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) else { return }
+        list.append(value)
+        tableView.reloadData()
         
         // 중요!, 잘못 입력하면 앱이 꼬이게 된다!
-        tableView.reloadData()
+//        tableView.reloadData()
         // tableView.numberOfRows(inSection: )
         // tableView.cellForRow(at: ) 등을 모두 불러야하는 것을 축약해주는 함수가 reloadData()
         
