@@ -32,4 +32,10 @@ class SearchMovieTableViewController: UITableViewController {
         // 몇 개의 셀을 보여줄 것인가
         return UIScreen.main.bounds.height / 8
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Trend", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "RecommandCollectionViewController") as! RecommandCollectionViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -8,6 +8,8 @@
 import UIKit
 
 class BucketlistTableViewController: UITableViewController {
+    
+    static let identifier = "BucketlistTableViewController"
 
     @IBOutlet weak var userTextField: UITextField!
     
@@ -16,11 +18,22 @@ class BucketlistTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 코드로 네비게이션 타이틀, 엑스버튼 삽입하기
+        navigationItem.title = "버킷리스트"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
+        
+        
         tableView.rowHeight = 80
         
         list.append("마녀")
         list.append("이세계삼촌")
     }
+    
+    @objc func closeButtonClicked() {
+        self.dismiss(animated: true)
+        
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count

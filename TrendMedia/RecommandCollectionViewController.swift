@@ -59,5 +59,6 @@ class RecommandCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         view.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 3, position: .center)
+        self.navigationController?.popViewController(animated: true)
     }
 }
