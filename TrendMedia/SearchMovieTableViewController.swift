@@ -36,6 +36,10 @@ class SearchMovieTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Trend", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "RecommandCollectionViewController") as! RecommandCollectionViewController
+        
+        // [값전달] 2: vc가 가지고 있는 프로퍼티에 데이터 추가
+        vc.movieTitle = movieList.movie[indexPath.row].movieTitle
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

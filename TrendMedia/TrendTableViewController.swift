@@ -23,6 +23,7 @@ class TrendTableViewController: UITableViewController {
         // 2.
         let viewController = storyboard.instantiateViewController(withIdentifier: BucketlistTableViewController.identifier) as! BucketlistTableViewController
         // 3. present 방식으로 띄움 (modal = 팝업)
+        viewController.placeHolder = "영화를 입력해주세요."
         self.present(viewController, animated: true)
     }
     
@@ -34,6 +35,9 @@ class TrendTableViewController: UITableViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: BucketlistTableViewController.identifier) as! BucketlistTableViewController
         // 2.5. full screen으로 띄우기!
         viewController.modalPresentationStyle = .fullScreen
+        
+        viewController.placeHolder = "드라마를 입력해주세요."
+        
         // 3. present 방식으로 띄움 (modal = 팝업)
         self.present(viewController, animated: true)
     }

@@ -9,6 +9,8 @@ import UIKit
 
 class BucketlistTableViewController: UITableViewController {
     
+    var placeHolder: String?
+    
     static let identifier = "BucketlistTableViewController"
 
     @IBOutlet weak var userTextField: UITextField!
@@ -18,6 +20,7 @@ class BucketlistTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userTextField.placeholder = placeHolder ?? "데이터 없음"
         // 코드로 네비게이션 타이틀, 엑스버튼 삽입하기
         navigationItem.title = "버킷리스트"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))

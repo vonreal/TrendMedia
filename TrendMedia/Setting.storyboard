@@ -328,7 +328,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeq-mR-WIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39.130434782608695" y="835.71428571428567"/>
+            <point key="canvasLocation" x="-164" y="836"/>
         </scene>
         <!--Search Movie Table View Controller-->
         <scene sceneID="hSh-IF-Mmk">
@@ -411,7 +411,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7S-Ki-t2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="836"/>
+            <point key="canvasLocation" x="1752.1739130434785" y="835.71428571428567"/>
         </scene>
     </scenes>
     <resources>
