@@ -10,6 +10,9 @@ import UIKit
 class BucketlistTableViewController: UITableViewController {
     
     var placeHolder: String?
+    // 옵셔널 스트링 타입으로 선언하더라도 오류가 뜨지 않는 이유는?
+    // placeholder 자체가 옵셔널이라면?
+    // 하지만 String Interpolation이라면?
     
     static let identifier = "BucketlistTableViewController"
 
@@ -20,7 +23,7 @@ class BucketlistTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userTextField.placeholder = placeHolder ?? "데이터 없음"
+        userTextField.placeholder = "\(placeHolder ?? "영화")를 입력해보세요"
         // 코드로 네비게이션 타이틀, 엑스버튼 삽입하기
         navigationItem.title = "버킷리스트"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))

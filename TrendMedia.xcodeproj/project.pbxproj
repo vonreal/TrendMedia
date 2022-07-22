@@ -26,6 +26,7 @@
 		76A203722884FE3900320B9A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A203712884FE3900320B9A /* SettingTableViewController.swift */; };
 		76A203762885289100320B9A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A203752885289100320B9A /* Setting.storyboard */; };
 		76A20378288532A600320B9A /* case2SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A20377288532A600320B9A /* case2SettingTableViewController.swift */; };
+		76C6D337288A407C00689824 /* exViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6D336288A407C00689824 /* exViewController.swift */; };
 		76CEA51C288636A60031F284 /* MySettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEA51B288636A60031F284 /* MySettingTableViewController.swift */; };
 		76CEA51E288640410031F284 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CEA51D288640410031F284 /* Search.storyboard */; };
 		76CEA5202886404B0031F284 /* Trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CEA51F2886404B0031F284 /* Trend.storyboard */; };
@@ -63,6 +64,7 @@
 		76A203712884FE3900320B9A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		76A203752885289100320B9A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		76A20377288532A600320B9A /* case2SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = case2SettingTableViewController.swift; sourceTree = "<group>"; };
+		76C6D336288A407C00689824 /* exViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exViewController.swift; sourceTree = "<group>"; };
 		76CEA51B288636A60031F284 /* MySettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingTableViewController.swift; sourceTree = "<group>"; };
 		76CEA51D288640410031F284 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		76CEA51F2886404B0031F284 /* Trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trend.storyboard; sourceTree = "<group>"; };
@@ -119,7 +121,6 @@
 				76A203752885289100320B9A /* Setting.storyboard */,
 				76D7904E28868D4C00E4D641 /* Shopping.storyboard */,
 				76CEA51F2886404B0031F284 /* Trend.storyboard */,
-				7616E9002888E7BD00375DA7 /* TrendTableViewController.swift */,
 				762327B82884DDC100C3978B /* AppDelegate.swift */,
 				76CEA52D28864DA30031F284 /* BucketListTableViewCell.swift */,
 				76CEA52B28864B910031F284 /* BucketlistTableViewController.swift */,
@@ -130,6 +131,7 @@
 				763774FA28879DFC00872A33 /* RecommandCollectionViewCell.swift */,
 				763774F828879A9D00872A33 /* RecommandCollectionViewController.swift */,
 				762327BA2884DDC100C3978B /* SceneDelegate.swift */,
+				76C6D336288A407C00689824 /* exViewController.swift */,
 				763774F22887876900872A33 /* SearchMovieTableViewCell.swift */,
 				763774F02887872800872A33 /* SearchMovieTableViewController.swift */,
 				76D79054288699C900E4D641 /* SearchTableViewCell.swift */,
@@ -138,6 +140,7 @@
 				76A203712884FE3900320B9A /* SettingTableViewController.swift */,
 				76D7905228868EC800E4D641 /* ShoppingTableViewCell.swift */,
 				76D7905028868E2600E4D641 /* ShoppingTableViewController.swift */,
+				7616E9002888E7BD00375DA7 /* TrendTableViewController.swift */,
 				76CEA523288643F60031F284 /* TrendViewController.swift */,
 				76CEA5292886478C0031F284 /* UITextField+Extension.swift */,
 				76CEA5272886453B0031F284 /* UIViewController+Extension.swift */,
@@ -255,6 +258,7 @@
 				76CEA524288643F60031F284 /* TrendViewController.swift in Sources */,
 				762327B92884DDC100C3978B /* AppDelegate.swift in Sources */,
 				76CEA52E28864DA30031F284 /* BucketListTableViewCell.swift in Sources */,
+				76C6D337288A407C00689824 /* exViewController.swift in Sources */,
 				76CEA52C28864B910031F284 /* BucketlistTableViewController.swift in Sources */,
 				762327BB2884DDC100C3978B /* SceneDelegate.swift in Sources */,
 			);
