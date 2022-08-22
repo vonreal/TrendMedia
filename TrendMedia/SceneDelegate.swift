@@ -14,16 +14,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
+//        // 유저디폴트 이용하기
+//        UserDefaults.standard.set(false, forKey: "First") // true이면 View Controller, false이면 SearchMovieTableViewController
+//        
+//        // 시작화면 지정하는 코드
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(windowScene: scene)
+//        
+//        if UserDefaults.standard.bool(forKey: "First") {
+//            
+//            let storyBoard = UIStoryboard(name: "Trend", bundle: nil)
+//            let viewCon = storyBoard.instantiateViewController(withIdentifier: "exViewController") as! exViewController
+//            
+//            window?.rootViewController = viewCon
+//        }else {
+//            let storyBoard = UIStoryboard(name: "Setting", bundle: nil)
+//            let viewCon = storyBoard.instantiateViewController(withIdentifier: "SearchMovieTableViewController") as! SearchMovieTableViewController
+//            
+//            window?.rootViewController = UINavigationController(rootViewController: viewCon)
+//        }
+//            
+//        // 윈도우에 보이게 하는 코드
+//        window?.makeKeyAndVisible()
         
-        
-        guard let scene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: scene)
-        
-        let sb = UIStoryboard(name: "Trend", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "exViewController") as! exViewController
-        
-        window?.rootViewController = vc
-        window?.makeKeyAndVisible()
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(windowScene: scene)
+//
+//        let sb = UIStoryboard(name: "Trend", bundle: nil)
+//        let vc = sb.instantiateViewController(withIdentifier: "exViewController") as! exViewController
+//
+//        window?.rootViewController = vc
+//        window?.makeKeyAndVisible()
         
         
         

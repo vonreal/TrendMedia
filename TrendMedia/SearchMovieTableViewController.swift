@@ -13,6 +13,23 @@ class SearchMovieTableViewController: UITableViewController {
 //    var movieList = ["셰이프 오브 워터", "판의 미로", "헬보이", "r", "q", "e", "e", "f", "d"]
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "처음으로", style: .plain, target: self, action: #selector(resetButtonClicked))
+    }
+        
+    @objc func resetButtonClicked(){
+        
+        // iOS13 이상 SceneDelegate 쓸 때 동작하는 코드
+        // 앱이 처음 시작하는 것 처럼 화면을 되돌리는 것
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+        
+        let storyBoard = UIStoryboard(name: "Trend", bundle: nil)
+        let viewCon = storyBoard.instantiateViewController(withIdentifier: "exViewController") as! exViewController
+        
+        sceneDelegate?.window?.rootViewController = viewCon
+        sceneDelegate?.window?.makeKeyAndVisible()
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

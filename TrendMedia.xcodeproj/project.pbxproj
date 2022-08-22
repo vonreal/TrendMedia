@@ -42,6 +42,9 @@
 		76D7905328868EC800E4D641 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D7905228868EC800E4D641 /* ShoppingTableViewCell.swift */; };
 		76D79055288699C900E4D641 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D79054288699C900E4D641 /* SearchTableViewCell.swift */; };
 		76D79057288699E000E4D641 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D79056288699E000E4D641 /* SearchTableViewController.swift */; };
+		76E5F61E28B39BF6009A4F1B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 76E5F61D28B39BF6009A4F1B /* Realm */; };
+		76E5F62028B39BF6009A4F1B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76E5F61F28B39BF6009A4F1B /* RealmSwift */; };
+		76E5F62328B39C3D009A4F1B /* ShoppingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5F62228B39C3D009A4F1B /* ShoppingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,7 @@
 		76D7905228868EC800E4D641 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		76D79054288699C900E4D641 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		76D79056288699E000E4D641 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		76E5F62228B39C3D009A4F1B /* ShoppingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E5F62028B39BF6009A4F1B /* RealmSwift in Frameworks */,
+				76E5F61E28B39BF6009A4F1B /* Realm in Frameworks */,
 				761CE35B2887B604008C2228 /* Kingfisher in Frameworks */,
 				763775012887AE5C00872A33 /* Toast in Frameworks */,
 			);
@@ -114,6 +120,7 @@
 		762327B72884DDC100C3978B /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
+				76E5F62128B39C2C009A4F1B /* Realm */,
 				762327C62884DDC400C3978B /* Info.plist */,
 				762327CC2884F12300C3978B /* Home.storyboard */,
 				76CEA521288640760031F284 /* Intro.storyboard */,
@@ -152,6 +159,14 @@
 			path = TrendMedia;
 			sourceTree = "<group>";
 		};
+		76E5F62128B39C2C009A4F1B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				76E5F62228B39C3D009A4F1B /* ShoppingModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +186,8 @@
 			packageProductDependencies = (
 				763775002887AE5C00872A33 /* Toast */,
 				761CE35A2887B604008C2228 /* Kingfisher */,
+				76E5F61D28B39BF6009A4F1B /* Realm */,
+				76E5F61F28B39BF6009A4F1B /* RealmSwift */,
 			);
 			productName = TrendMedia;
 			productReference = 762327B52884DDC100C3978B /* TrendMedia.app */;
@@ -203,6 +220,7 @@
 			packageReferences = (
 				763774FF2887AE5C00872A33 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				761CE3592887B604008C2228 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				76E5F61C28B39BF6009A4F1B /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 762327B62884DDC100C3978B /* Products */;
 			projectDirPath = "";
@@ -258,6 +276,7 @@
 				76CEA524288643F60031F284 /* TrendViewController.swift in Sources */,
 				762327B92884DDC100C3978B /* AppDelegate.swift in Sources */,
 				76CEA52E28864DA30031F284 /* BucketListTableViewCell.swift in Sources */,
+				76E5F62328B39C3D009A4F1B /* ShoppingModel.swift in Sources */,
 				76C6D337288A407C00689824 /* exViewController.swift in Sources */,
 				76CEA52C28864B910031F284 /* BucketlistTableViewController.swift in Sources */,
 				762327BB2884DDC100C3978B /* SceneDelegate.swift in Sources */,
@@ -502,6 +521,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		76E5F61C28B39BF6009A4F1B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -514,6 +541,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 763774FF2887AE5C00872A33 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
+		};
+		76E5F61D28B39BF6009A4F1B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76E5F61C28B39BF6009A4F1B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		76E5F61F28B39BF6009A4F1B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76E5F61C28B39BF6009A4F1B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

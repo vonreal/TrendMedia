@@ -7,6 +7,11 @@
 
 import UIKit
 
+struct Todo {
+    var title: String
+    var done: Bool
+}
+
 class BucketlistTableViewController: UITableViewController {
     
     var placeHolder: String?
@@ -16,13 +21,29 @@ class BucketlistTableViewController: UITableViewController {
     
     static let identifier = "BucketlistTableViewController"
 
-    @IBOutlet weak var userTextField: UITextField!
+    @IBOutlet weak var userTextField: UITextField! {
+        didSet {
+            print("텍스트 필드 Didset")
+            userTextField.textAlignment = .center
+            userTextField.font = .boldSystemFont(ofSize: 22)
+            userTextField.textColor = .systemRed
+        }
+    }
     
-    var list = ["범죄도시2", "탑건2", "토르"]
+    var list = [Todo(title: "범죄도시", done: false), Todo(title: "rudnfdhkdrnr", done: false)] {
+        didSet {
+            tableView.reloadData()
+            print("변경전: \(oldValue)")
+            print("변경후: \(list)\n")
+        }
+    }
+    
+    deinit {
+        print("나 나갔다아아앙앙")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         userTextField.placeholder = "\(placeHolder ?? "영화")를 입력해보세요"
         // 코드로 네비게이션 타이틀, 엑스버튼 삽입하기
         navigationItem.title = "버킷리스트"
@@ -31,8 +52,8 @@ class BucketlistTableViewController: UITableViewController {
         
         tableView.rowHeight = 80
         
-        list.append("마녀")
-        list.append("이세계삼촌")
+        list.append(Todo(title: "마녀", done: false))
+        list.append(Todo(title: "이세계삼촌", done: false))
     }
     
     @objc func closeButtonClicked() {
@@ -49,17 +70,27 @@ class BucketlistTableViewController: UITableViewController {
         // 타입 캐스팅
         let cell = tableView.dequeueReusableCell(withIdentifier: BucketListTableViewCell.identifier, for: indexPath) as! BucketListTableViewCell
         
-        cell.bucketlistLabel.text = list[indexPath.row]
+        cell.bucketlistLabel.text = list[indexPath.row].title
         cell.bucketlistLabel.font = .boldSystemFont(ofSize: 18)
+        cell.checkboxButton.tag = indexPath.row
+        cell.checkboxButton.addTarget(self, action: #selector(checkboxButtonClicked), for: .touchUpInside)
         
+        let value = list[indexPath.row].done ? "checkmark.square.fill" : "checkmark.square"
+        cell.checkboxButton.setImage(UIImage(systemName: value), for: .normal)
         return cell
+    }
+    
+    @objc func checkboxButtonClicked(_ sender: UIButton) {
+        list[sender.tag].done = !list[sender.tag].done
+        
+//        tableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
     }
     
     @IBAction func userTextFieldReturn(_ sender: UITextField) {
    
-        guard let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) else { return }
-        list.append(value)
-        tableView.reloadData()
+//        guard let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) else { return }
+        list.append(Todo(title: sender.text!, done: false))
+//        tableView.reloadData()
         
         // 중요!, 잘못 입력하면 앱이 꼬이게 된다!
 //        tableView.reloadData()
@@ -84,7 +115,7 @@ class BucketlistTableViewController: UITableViewController {
         if editingStyle == .delete {
             // 배열 삭제 후 테이블뷰 갱신
             list.remove(at: indexPath.row)
-            tableView.reloadData()
+//            tableView.reloadData()
         }
     }
 }
